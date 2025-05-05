@@ -17,12 +17,12 @@
 // |  ESC |  Q  |  W  |  E  |  R   |  T  |                       |  Y  |  U   |  I  |  O  |  P   | BSPC |
 // |  TAB |  A  |  S  |  D  |  F   |  G  |                       |  H  |  J   |  K  |  L  |  ;   | ENT  |
 //        |  Z  |  X  |  C  |  V   |  B  |                       |  N  |  M   |  ,  |  .  | SHFT | 
-//                    | FN  | CTRL | ALT | SPACE |       | SPACE | CMD | ***  | nan |
+//                    | FN  | CTRL | ALT | SPACE |       | SPACE | CMD | ***  | ALT |
                         bindings = <
    &bt BT_CLR   &kp Q &kp W &kp E     &kp R     &kp T                                &kp Y    &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LSHFT &kp A &kp S &kp D     &kp F     &kp G                                &kp H    &kp J  &kp K     &kp L   &kp SEMI &kp RET
-             &kp Z &kp X &kp C     &kp V     &kp B                                &kp N    &kp M  &kp COMMA &kp DOT &kp RSHFT 
-                         &mo GLOBE &kp LCTRL &kp LALT &kp SPACE         &kp SPACE &kp RCMD &mo 1 &kp trans
+   &kp LSHFT    &kp A &kp S &kp D     &kp F     &kp G                                &kp H    &kp J  &kp K     &kp L   &kp SEMI &kp RET
+                &kp Z &kp X &kp C     &kp V     &kp B                                &kp N    &kp M  &kp COMMA &kp DOT &kp RSHFT 
+                            &mo GLOBE &kp LCTRL &kp LALT &kp SPACE         &kp SPACE &kp RCMD &mo 1  &kp RALT
                         >;
                 };
                 lower_layer {
@@ -32,10 +32,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-        &trans      &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans      &trans      &trans     
-        &trans      &trans      &trans      &trans      &trans         &kp LARW    &kp DARW    &kp UARW    &kp RARW    &trans      &trans      &trans     
-                    &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans       
-                                &trans      &trans      &kp SPACE      &kp SPACE   &trans      &trans      &trans
+        &trans      &trans      &trans      &trans      &trans         &trans                              &trans      &trans      &trans      &trans      &trans      &trans     
+        &trans      &trans      &trans      &trans      &trans         &kp LARW                            &kp DARW    &kp UARW    &kp RARW    &trans      &trans      &trans     
+                    &trans      &trans      &trans      &trans         &trans                              &trans      &trans      &trans      &trans      &trans
+                                            &trans      &trans         &trans      &kp SPACE   &kp SPACE   &trans      &trans      &trans 
 
                         >;
                 };
@@ -47,10 +47,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-        &trans      &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans      &trans      &trans     
-        &trans      &trans      &trans      &trans      &trans         &kp LARW    &kp DARW    &kp UARW    &kp RARW    &trans      &trans      &trans     
-                    &trans      &trans      &trans      &trans         &trans      &trans      &trans      &trans      &trans       
-                                &trans      &trans      &kp SPACE      &kp SPACE   &trans      &trans      &trans
+        &trans      &trans      &trans      &trans      &trans         &trans                              &trans      &trans      &trans      &trans      &trans      &trans     
+        &trans      &trans      &trans      &trans      &trans         &kp LARW                            &kp DARW    &kp UARW    &kp RARW    &trans      &trans      &trans     
+                    &trans      &trans      &trans      &trans         &trans                              &trans      &trans      &trans      &trans      &trans
+                                            &trans      &trans         &trans      &kp SPACE   &kp SPACE   &trans      &trans      &trans 
 
                         >;
                 };
