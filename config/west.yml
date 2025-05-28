@@ -12,7 +12,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-config-pilot3 # <-- new entry
-      remote: zzeneg
+      remote: alisonands
       revision: main
   self:
     path: config
